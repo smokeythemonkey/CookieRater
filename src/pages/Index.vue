@@ -1,15 +1,18 @@
 <template>
-	<Layout>
-		<!-- Learn how to use images here: https://gridsome.org/docs/images -->
-		<g-image alt="Example image" src="~/favicon.png" width="135" />
+  <Layout>
+    <!-- Learn how to use images here: https://gridsome.org/docs/images -->
+    <!-- <g-image alt="Example image" src="~/favicon.png" width="135" /> -->
 
-		<h1>Testing my gridsome blog</h1>
+    <h1 class="text-xl font-semibold mb-5">
+      Cookie Rater
+    </h1>
 
-		<p>
-			this will eventually be the cookie rater blog
-		</p>
+    <p>
+      This is the Cookie Rater Blog
+    </p>
+    <!-- <g-link to="/pages">Pages</g-link> -->
 
-		<p class="home-links">
+    <!-- <p class="home-links">
 			<a href="https://gridsome.org/docs/" target="_blank" rel="noopener"
 				>Gridsome Docs</a
 			>
@@ -19,20 +22,14 @@
 				rel="noopener"
 				>GitHub</a
 			>
-		</p>
-	</Layout>
+		</p> -->
+  </Layout>
 </template>
 
 <script>
 export default {
-	metaInfo: {
-		title: 'Hello, world!',
-	},
-};
-</script>
-
-<style>
-.home-links a {
-	margin-right: 1rem;
+  metaInfo: {
+    title: 'Cookie Rater'
+  }
 }
-</style>
+</script>
