@@ -1,5 +1,5 @@
 {
-  "name": "CookieRater Blog",
+  "name": "CookieRaterBlog",
   "private": true,
   "scripts": {
     "build": "gridsome build",
