@@ -1,27 +1,30 @@
 <template>
-  <Layout>
-    <content-header :title="$page.category.title" :sub="subTitle"></content-header>
+    <Layout>
+        <content-header
+            :title="$page.category.title"
+            :sub="subTitle"
+        ></content-header>
 
-    <div class="container mx-auto">
-      <div class="flex flex-wrap my-4">
-        <CardItem
-          v-for="edge in $page.category.belongsTo.edges"
-          :key="edge.node.id"
-          :record="edge.node"
-        />
-      </div>
+        <div class="container mx-auto">
+            <div class="flex flex-wrap my-4">
+                <CardItem
+                    v-for="edge in $page.category.belongsTo.edges"
+                    :key="edge.node.id"
+                    :record="edge.node"
+                />
+            </div>
 
-      <div class="pagination flex justify-center mb-8">
-        <Pagination
-          :baseUrl="$page.category.path"
-          :currentPage="$page.category.belongsTo.pageInfo.currentPage"
-          :totalPages="$page.category.belongsTo.pageInfo.totalPages"
-          :maxVisibleButtons="5"
-          v-if="$page.category.belongsTo.pageInfo.totalPages > 1"
-        />
-      </div>
-    </div>
-  </Layout>
+            <div class="pagination flex justify-center mb-8">
+                <Pagination
+                    :baseUrl="$page.category.path"
+                    :currentPage="$page.category.belongsTo.pageInfo.currentPage"
+                    :totalPages="$page.category.belongsTo.pageInfo.totalPages"
+                    :maxVisibleButtons="5"
+                    v-if="$page.category.belongsTo.pageInfo.totalPages > 1"
+                />
+            </div>
+        </div>
+    </Layout>
 </template>
 
 <page-query>
@@ -71,24 +74,24 @@ import Pagination from "~/components/Content/Pagination.vue";
 import ContentHeader from "~/components/Partials/ContentHeader.vue";
 
 export default {
-  components: {
-    Pagination,
-    CardItem,
-    ContentHeader
-  },
-  computed: {
-    postLabel: function() {
-      var pluralize = require("pluralize");
-      return pluralize("post", this.$page.category.belongsTo.totalCount);
+    components: {
+        Pagination,
+        CardItem,
+        ContentHeader,
     },
-    subTitle: function() {
-      return `A collection of ${this.$page.category.belongsTo.totalCount} ${this.postLabel}`;
-    }
-  },
-  metaInfo() {
-    return {
-      title: this.$page.category.title
-    };
-  }
+    computed: {
+        postLabel: function () {
+            var pluralize = require("pluralize");
+            return pluralize("post", this.$page.category.belongsTo.totalCount);
+        },
+        subTitle: function () {
+            return `A collection of ${this.$page.category.belongsTo.totalCount} ${this.postLabel}`;
+        },
+    },
+    metaInfo() {
+        return {
+            title: this.$page.category.title,
+        };
+    },
 };
 </script>

@@ -1,21 +1,30 @@
 <template>
-  <Layout>
-      <content-header 
-        :title="$static.metadata.siteName" 
-        :sub="$static.metadata.siteDescription"
-        image="phoenix-han-Nqdh0G8rdCc-unsplash.jpg">
-      </content-header>
+    <Layout>
+        <content-header
+            :title="$static.metadata.siteName"
+            :sub="$static.metadata.siteDescription"
+            image="phoenix-han-Nqdh0G8rdCc-unsplash.jpg"
+        >
+        </content-header>
 
-      <div class="container mx-auto">
-          <div class="flex flex-wrap my-4">
+        <div class="container mx-auto">
+            <div class="flex flex-wrap my-4">
+                <FeaturedCard
+                    v-if="$page.featured.totalCount > 0"
+                    :records="$page.featured.edges"
+                />
 
-          <FeaturedCard v-if="$page.featured.totalCount>0" :records="$page.featured.edges"/>
-
-        
-          <CardItem v-for="edge in $page.entries.edges" :key="edge.node.id" :record="edge.node" />
+                
+            </div>
+            <div class="flex my-4">
+                <CardItem
+                    v-for="edge in $page.entries.edges"
+                    :key="edge.node.id"
+                    :record="edge.node"
+                />
+            </div>
         </div>
-      </div>
-  </Layout>
+    </Layout>
 </template>
 
 <page-query>
@@ -92,15 +101,14 @@ import CardItem from "~/components/Content/CardItem.vue";
 import FeaturedCard from "~/components/Content/FeaturedCard.vue";
 import ContentHeader from "~/components/Partials/ContentHeader.vue";
 
-
 export default {
-  metaInfo: {
-    title: "Hello, world!"
-  },
-  components: {
-    CardItem,
-    FeaturedCard,
-    ContentHeader
-  }
+    metaInfo: {
+        title: "Cookie Rater Blog",
+    },
+    components: {
+        CardItem,
+        FeaturedCard,
+        ContentHeader,
+    },
 };
 </script>

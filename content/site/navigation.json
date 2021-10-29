@@ -11,11 +11,6 @@
       "external": false
     },
     {
-      "name": "Getting started",
-      "link": "/category/getting-started",
-      "external": false
-    },
-    {
       "name": "More",
       "link": "#",
       "children": [
@@ -44,19 +39,14 @@
       "external" : false
     },
     {
-      "name": "Facebook",
-      "link": "https://www.facebook.com",
+      "name": "Instagram",
+      "link": "https://www.instagram.com/cookier8r/",
       "external": true
     },
     {
       "name": "Gridsome",
       "link": "https://www.gridsome.org",
       "external": true
-    },
-    {
-      "name": "RSS",
-      "link": "/rss.xml",
-      "external": false
     }
   ]
 }

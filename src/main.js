@@ -5,9 +5,9 @@ import DefaultLayout from '~/layouts/Default.vue'
 
 //import VTooltip from 'v-tooltip'
 import {
-  VTooltip,
-  VPopover,
-  VClosePopover
+    VTooltip,
+    VPopover,
+    VClosePopover
 } from 'v-tooltip'
 
 import 'prismjs/themes/prism.css'
@@ -15,17 +15,17 @@ import '~/assets/scss/main.scss'
 import 'prismjs/plugins/line-numbers/prism-line-numbers.css'
 
 import {
-  FontAwesomeIcon
+    FontAwesomeIcon
 } from '@fortawesome/vue-fontawesome';
 import {
-  config,
-  library
+    config,
+    library
 } from '@fortawesome/fontawesome-svg-core';
 import {
-  fas
+    fas
 } from '@fortawesome/free-solid-svg-icons';
 import {
-  fab
+    fab
 } from '@fortawesome/free-brands-svg-icons'
 
 import '@fortawesome/fontawesome-svg-core/styles.css';
@@ -38,25 +38,25 @@ library.add(fas);
 library.add(fab);
 
 export default function (Vue, {
-  router,
-  head,
-  isClient
+    router,
+    head,
+    isClient
 }) {
-  // Set default layout as a global component
-  Vue.component('Layout', DefaultLayout)
+    // Set default layout as a global component
+    Vue.component('Layout', DefaultLayout)
 
-  Vue.component('font-awesome', FontAwesomeIcon)
+    Vue.component('font-awesome', FontAwesomeIcon)
 
-  Vue.use(ClickOutside)
-  
-  if( isClient ) {
-    VTooltip.options.defaultPlacement = 'top-end';
-    VTooltip.options.defaultClass = 'bg-black text-xs px-2 leading-normal py-1 rounded absolute text-gray-400 max-w-xs ml-2 mt-3';
-    VTooltip.options.defaultBoundariesElement = document.body;
+    Vue.use(ClickOutside)
 
-    Vue.directive('tooltip', VTooltip)
-    Vue.directive('close-popover', VClosePopover)
-    Vue.component('v-popover', VPopover)
-    Vue.use(InfiniteLoading)
-  }
+    if (isClient) {
+        VTooltip.options.defaultPlacement = 'top-end';
+        VTooltip.options.defaultClass = 'bg-black text-xs px-2 leading-normal py-1 rounded absolute text-gray-400 max-w-xs ml-2 mt-3';
+        VTooltip.options.defaultBoundariesElement = document.body;
+
+        Vue.directive('tooltip', VTooltip)
+        Vue.directive('close-popover', VClosePopover)
+        Vue.component('v-popover', VPopover)
+        Vue.use(InfiniteLoading)
+    }
 }

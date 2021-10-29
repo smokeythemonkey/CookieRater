@@ -64,10 +64,10 @@ h6, .h6 {
 .featured-post-card {
 
   .slick-list {
-    @apply h-full rounded-lg;
+    @apply h-full w-full rounded-lg;
 
     div:not(.post-card-author):not(.featured-label):not(.post-card-content):not(.post-card-footer) {
-      @apply h-full;
+      @apply h-full w-full;
     }
   }
 
@@ -86,7 +86,7 @@ h6, .h6 {
   }
 
   .post-card-image {
-    @apply h-56 w-full object-cover rounded-lg relative rounded-b-none;
+    @apply max-h-full w-full object-cover rounded-lg relative rounded-b-none;
   }
 
   .post-card-content {

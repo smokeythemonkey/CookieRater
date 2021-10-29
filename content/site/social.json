@@ -1,19 +1,9 @@
 {
     "social" : [
         {
-            "name": "Facebook",
-            "link": "#",
-            "icon": "facebook-square"
-        },
-        {
-            "name": "Instagram",
-            "link": "#",
+            "name": "instagram",
+            "link": "https://www.instagram.com/cookier8r/",
             "icon": "instagram"
-        },
-        {
-            "name": "Github",
-            "link": "#",
-            "icon": "github"
         }
     ]
 }
