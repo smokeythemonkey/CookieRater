@@ -63,7 +63,7 @@
                         "
                     >
                         <font-awesome
-                            :icon="['fas', 'star']"
+                            :icon="['fas', 'cookie']"
                             size="xs"
                         ></font-awesome>
                     </span>
@@ -74,6 +74,7 @@
                     class="post-card-image"
                 ></g-image>
             </g-link>
+
             <div
                 class="
                     post-card-content
@@ -83,7 +84,7 @@
                     rounded-b-lg
                 "
             >
-                <div class="flex-col relative flex justify-between px-6 pt-4">
+                <div class="flex-col relative flex justify-between px-6 pt-2">
                     <p
                         class="
                             text-xs
@@ -104,7 +105,7 @@
                         flex-col
                         relative
                         flex
-                        justify-between
+                        justify
                         rounded-b-lg
                         px-6
                         h-40
@@ -112,11 +113,17 @@
                         dark:text-white
                     "
                 >
-                    <h3 class="post-card-title tracking-wide mt-0">
+                    <h3 class="post-card-title tracking-wide mt-0 my-2">
                         {{ record.title }}
                     </h3>
+                    
 
-                    <div class="text-xs leading-none absolute bottom-0 pb-6">
+                    <!-- <div class="overflow-y-auto">
+                        <h4 class="post-card-excerpt my-0">
+                            {{ record.excerpt }}
+                        </h4> 
+                    </div> -->
+                    <div class="post-card-footer text-xs leading-none pb-6">
                         <p>
                             <time :datetime="record.datetime">{{
                                 record.humanTime

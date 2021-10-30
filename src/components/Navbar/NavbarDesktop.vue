@@ -9,7 +9,7 @@
             justify-between
             flex-wrap
             container
-            mx-5
+            mx-10
             py-3
             z-20
             dark:text-gray-400
@@ -32,7 +32,9 @@
                             class="block py-1"
                             :to="navItem.link"
                             :title="navItem.name"
-                            
+                            v-if="
+                                navItem.external == false 
+                            "
                             >{{ navItem.name }}</g-link
                         >
                         <!-- <a

@@ -1,7 +1,7 @@
 ---
-id: author1
+id: authorBoomer
 name: Boomer
-bio: I love my cookies,
+bio: Woof, bau wau, aroooooooo!
 instagram: https://www.instagram.com
 image: ./images/author1.png
 cover: ./cover/benjamin-voros-Lxq_TyMMHtQ-unsplash.jpg

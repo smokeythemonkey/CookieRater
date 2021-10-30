@@ -5,8 +5,8 @@
       class="toggle-theme"
     >
     
-    <font-awesome :icon="['fas', 'sun']" v-if="theme === 'dark'"></font-awesome>
-    <font-awesome :icon="['fas', 'moon']" v-if="theme === 'light'"></font-awesome>
+    <font-awesome :icon="['fas', 'cookie']" v-if="theme === 'dark'"></font-awesome>
+    <font-awesome :icon="['fas', 'cookie-bite']" v-if="theme === 'light'"></font-awesome>
   </a>
 </template>
 

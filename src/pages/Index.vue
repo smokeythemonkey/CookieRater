@@ -75,6 +75,7 @@
             title
             path
           }
+          excerpt
           author {
             id
             name
