@@ -13,10 +13,7 @@
                             class="block py-1"
                             :to="navItem.link"
                             :title="navItem.name"
-                            v-if="
-                                navItem.external != true &&
-                                navItem.children.length <= 0
-                            "
+                            
                             >{{ navItem.name }}</g-link
                         >
                         <a
@@ -30,7 +27,7 @@
                             "
                             >{{ navItem.name }}</a
                         >
-                        <ClientOnly>
+                        <!-- <ClientOnly>
                             <v-popover
                                 placement="right"
                                 popoverClass="mobile-navbar-popover"
@@ -75,7 +72,7 @@
                                     </ul>
                                 </template>
                             </v-popover>
-                        </ClientOnly>
+                        </ClientOnly> -->
                     </li>
                 </ul>
             </div>
@@ -95,11 +92,7 @@ query {
       name
       link
       external
-      children {
-        name
-        link
-        external
-      }
+      
     }
   }
 }

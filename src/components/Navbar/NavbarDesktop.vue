@@ -9,7 +9,7 @@
             justify-between
             flex-wrap
             container
-            mx-auto
+            mx-5
             py-3
             z-20
             dark:text-gray-400
@@ -32,13 +32,10 @@
                             class="block py-1"
                             :to="navItem.link"
                             :title="navItem.name"
-                            v-if="
-                                navItem.external != true &&
-                                navItem.children.length <= 0
-                            "
+                            
                             >{{ navItem.name }}</g-link
                         >
-                        <a
+                        <!-- <a
                             class="block"
                             :href="navItem.link"
                             target="_blank"
@@ -48,7 +45,7 @@
                                 navItem.children.length <= 0
                             "
                             >{{ navItem.name }}</a
-                        >
+                        > -->
                         <!-- <ClientOnly>
                             <v-popover
                                 placement="top"
@@ -96,7 +93,7 @@
                             </v-popover>
                         </ClientOnly> -->
                     </li>
-                    <!-- <li class="px-4 py-1">
+                    <li class="px-4 py-1">
                         <a
                             role="button"
                             @click.prevent="toggleSubNavigation()"
@@ -109,7 +106,7 @@
                             }"
                         >
                             <font-awesome
-                                :icon="['fas', 'ellipsis-h']"
+                                :icon="['fas', 'angle-down']"
                                 size="lg"
                             ></font-awesome>
                         </a>
@@ -134,7 +131,7 @@
                                 <subnavigation />
                             </div>
                         </div>
-                    </li> -->
+                    </li>
                 </ul>
             </div>
 
@@ -214,11 +211,7 @@ query {
       name
       link
       external
-      children {
-        name
-        link
-        external
-      }
+      
     }
   }
 }
