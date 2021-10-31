@@ -1,32 +1,41 @@
 {
-  "headerNavigation": [
-    {
-      "name": "Home",
-      "link": "/",
-      "external": false
-    },
-    {
-      "name": "About",
-      "link": "/about-us",
-      "external": false
-    }
-    
-  ],
-  "footerNavigation": [
-    {
-      "name": "Latest Posts",
-      "link": "/",
-      "external" : false
-    },
-    {
-      "name": "Instagram",
-      "link": "https://www.instagram.com/cookier8r/",
-      "external": true
-    },
-    {
-      "name": "Gridsome",
-      "link": "https://www.gridsome.org",
-      "external": true
-    }
-  ]
+    "headerNavigation": [
+        {
+            "name": "Home",
+            "link": "/",
+            "external": false
+        },
+        {
+            "name": "About",
+            "link": "/about-us",
+            "external": false
+        }
+    ],
+    "footerNavigation": [
+        {
+            "name": "Imprint",
+            "link": "/imprint",
+            "external": false
+        },
+        {
+            "name": "Disclaimer",
+            "link": "/disclaimer",
+            "external": false
+        },
+        {
+            "name": "Latest Posts",
+            "link": "/",
+            "external": false
+        },
+        {
+            "name": "Instagram",
+            "link": "https://www.instagram.com/cookier8r/",
+            "external": true
+        },
+        {
+            "name": "Gridsome",
+            "link": "https://www.gridsome.org",
+            "external": true
+        }
+    ]
 }

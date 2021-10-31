@@ -21,6 +21,8 @@
                         post-content
                         container
                         mx-auto
+                        my-auto
+                        h-screen
                         relative
                         dark:text-gray-400
                     "

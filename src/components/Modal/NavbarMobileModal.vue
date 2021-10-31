@@ -13,10 +13,7 @@
                             class="block py-1"
                             :to="navItem.link"
                             :title="navItem.name"
-                            v-if="
-                                navItem.external == true &&
-                                navItem.children.length <= 0
-                            "
+                            v-if="navItem.external == false"
                             >{{ navItem.name }}</g-link
                         >
                         <a
