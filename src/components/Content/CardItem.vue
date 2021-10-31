@@ -42,7 +42,7 @@
                     />
                 </g-link>
             </div>
-
+            <!-- template and layout for post-card-image -->
             <g-link :to="record.path" class="post-card-image-link">
                 <div
                     v-if="record.featured"
@@ -75,6 +75,7 @@
                 ></g-image>
             </g-link>
 
+<!-- template and layout for post-card-content with category, title, date and read time -->
             <div
                 class="
                     post-card-content
@@ -94,11 +95,12 @@
                             dark:text-white
                         "
                     >
-                        <g-link :to="record.category.path">{{
-                            record.category.title
-                        }}</g-link>
+                        <g-link :to="record.category.path">
+                            {{ record.category.title }}
+                        </g-link>
                     </p>
                 </div>
+
                 <g-link
                     :to="record.path"
                     class="
@@ -116,13 +118,19 @@
                     <h3 class="post-card-title tracking-wide mt-0 my-2">
                         {{ record.title }}
                     </h3>
-                    
 
-                    <!-- <div class="overflow-y-auto">
-                        <h4 class="post-card-excerpt my-0">
+                    <div class="flex-col justify-between my-0 px-0 pt-0">
+                    <p
+                        class="
+                            post-card-excerpt                            
+                            tracking-narrow                            
+                            mt-0
+                            dark:text-white
+                        "
+                    >                        
                             {{ record.excerpt }}
-                        </h4> 
-                    </div> -->
+                    </p>
+                </div>
                     <div class="post-card-footer text-xs leading-none pb-6">
                         <p>
                             <time :datetime="record.datetime">{{

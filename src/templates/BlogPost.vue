@@ -5,7 +5,19 @@
             :staticImage="false"
             :opacity="0"
         ></content-header>
-
+        <div class="flex-row flex justify-center px-6 pt-2">
+            <p
+                        class="
+                            text-md
+                            tracking-wide
+                            font-medium
+                            mt-3
+                            dark:text-white
+                        "
+                    >
+                {{$page.blog.image_caption}}
+            </p>
+        </div>
         <div
             class="
                 container
@@ -175,41 +187,7 @@
                                                     <font-awesome
                                                         :icon="[
                                                             'fab',
-                                                            'facebook',
-                                                        ]"
-                                                    />
-                                                </a>
-                                                &nbsp;
-                                                <a
-                                                    :href="
-                                                        $page.blog.author[0]
-                                                            .twitter
-                                                    "
-                                                    target="_blank"
-                                                    rel="noopener noreferrer"
-                                                    class="hover:text-blue-500"
-                                                >
-                                                    <font-awesome
-                                                        :icon="[
-                                                            'fab',
-                                                            'twitter',
-                                                        ]"
-                                                    />
-                                                </a>
-                                                &nbsp;
-                                                <a
-                                                    :href="
-                                                        $page.blog.author[0]
-                                                            .linkedin
-                                                    "
-                                                    target="_blank"
-                                                    rel="noopener noreferrer"
-                                                    class="hover:text-blue-500"
-                                                >
-                                                    <font-awesome
-                                                        :icon="[
-                                                            'fab',
-                                                            'linkedin',
+                                                            'instagram',
                                                         ]"
                                                     />
                                                 </a>
@@ -291,7 +269,7 @@
         node {
           title
       path
-      image(width:1600, height:800)
+      image(width:1600, height: 800)
       image_caption
       excerpt
       content

@@ -300,6 +300,10 @@ h6, .h6 {
   content: "";
 }
 
+.image_reference {
+    @apply leading-8 text-sm
+}
+
 /* Generated with http://k88hudson.github.io/syntax-highlighting-theme-generator/www */
 /* http://k88hudson.github.io/react-markdocs */
 /**

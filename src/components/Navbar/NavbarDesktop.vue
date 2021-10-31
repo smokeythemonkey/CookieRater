@@ -8,7 +8,6 @@
             items-center
             justify-between
             flex-wrap
-            container
             mx-10
             py-3
             z-20
@@ -32,9 +31,7 @@
                             class="block py-1"
                             :to="navItem.link"
                             :title="navItem.name"
-                            v-if="
-                                navItem.external == false 
-                            "
+                            v-if="navItem.external == false"
                             >{{ navItem.name }}</g-link
                         >
                         <!-- <a
