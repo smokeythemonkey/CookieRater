@@ -1,42 +1,8 @@
-<div align="center">
+# Repo for Cookie Rater Blog site
 
-<a href="https://www.jammeryhq.com" title="JammeryHQ" target="_blank">
+Personal blog site to learn some vuejs with gridsome and show off partners photography.
 
-  <img src="https://jammeryhq.com/jammeryhq.png" width="128" />
-  
-</a>
-
-<p>
-Fast-track your JAMstack development & learning
-</p>
-</div>
-
-<hr />
-
-# About this starter
-
-Gridsome starter based on the Liebling theme for Ghost. Content is added via markdown, while Tailwind CSS is used for the layout/styling.
-
-## Key features
-
-* Built with Tailwind CSS
-* Responsive 
-* Dark Mode
-* Mega Menu
-* Fulltext search
-* Author Pages
-* Custom Image Processor 
-* Pagination
-* Syntax Highlighting via PrismJS
-
-## Installation
-
-Run the following command to create a new gridsome project 
-
-```
-gridsome create my-blog https://github.com/jammeryhq/gridsome-starter-liebling
-```
-
+Site is hosted on netlify.
 ## Credits
 
-This starter is based on [Ghost Liebling](https://github.com/eddiesigner/liebling).
+Site is templated from [jammeryhq gridsome starter liebling](https://github.com/jammeryhq/gridsome-starter-liebling).
